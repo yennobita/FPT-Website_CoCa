@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website | Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <!-- <div class="header" id="myHeader"> -->
+        <header id="myHeader">
+			<a href="#"><img src="IMG/logo.png" class="logo"></a>
+			<div class="toggleMenu" onclick="menuToggle();"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="agency.html">Agency</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</header>
+    <!-- </div> -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>CONTACT</span> US </h1>
+        
+        <div class="row">
+        
+            <div class="content">
+        
+                <h3 class="title">contact</h3>
+        
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> nguyenyen102003@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +123-456-7890 </h3>
+                    <h3> <i class="fas fa-phone"></i> +111-222-3333 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Ha Tinh, Viet Nam. </h3>
+        
+                </div>
+        
+            </div>
+        
+            <form action="">
+        
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+        
+            </form>
+        
+        </div>
+        </section>
+
+
+        <!-- foter -->
+
+        <div class="footer">
+            <button class="bt">SUBSCRIBE TO NEWSLETTER</button>
+            <div class="ft-left">
+                <img src="IMG/logo.png" alt="">
+                <h3>pepsi</h3>
+            </div>
+            <div class="ft-lef2">
+                <a href="">Home</a>
+                <span>|</span>
+                <a href="">Product</a>
+                <span>|</span>
+                <a href="">Agency</a>
+                <span>|</span>
+                <a href="">Contact</a>
+            </div>
+            <div class="content-bottom">
+                <div class="con">
+                    <h3>CONTACT US</h3>
+                    <h3>TERMS & CONDITIONS</h3>
+                    <h3>PRIVACY POLICY</h3>
+                </div>
+                <div class="con">
+                    <h3>COPYRIGHT</h3>
+                    <h3>PRODUCT FACTS</h3>
+                    <h3>STORE LOCATOR</h3>
+                </div>
+                <div class="con">
+                    <h3>SERVE PEPSI</h3>
+                    <h3>ABOUT OUR ADS</h3>
+                    <h3>CAREERS</h3>
+                </div>
+            </div>
+            
+            <div class="ft-right">
+            
+                <ul class="ssi">
+                    <li><a href="#"><img src="IMG/facebook.png"></a></li>
+                    <li><a href="#"><img src="IMG/twitter.png"></a></li>
+                    <li><a href="#"><img src="IMG/instagram.png"></a></li>
+                </ul>
+    
+                <p>Website pepsico&copy;2022nbyen</p>
+    
+            </div>
+    
+    
+    
+        </div>
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.pepsi').src = anything;
+            }
+            function changeBgColor(color) {
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+            function menuToggle() {
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const navigation = document.querySelector('.navigation');
+                toggleMenu.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () { myFunction() };
+    
+            // Get the header
+            var header = document.getElementById("myHeader");
+    
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+    
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+</body>
+</html>

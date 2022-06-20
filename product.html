@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website | Landing Page</title>
+    <link rel="stylesheet" href="CSS/product.css">
+    <script src="https://kit.fontawesome.com/d243342ea1.js" crossorigin="anonymous"></script>
+    
+</head>
+<body> 
+    <container>
+        <!-- <div class="header" id="myHeader"> -->
+        <header id="myHeader">
+			<a href="#"><img src="IMG/logo.png" class="logo"></a>
+			<div class="toggleMenu" onclick="menuToggle();"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="agency.html">Agency</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</header>
+    <!-- </div> -->
+
+
+
+        <div class="banner">
+            <img src="IMG/pepsi_banner.png" alt="">
+        </div>
+<!-- lightbox -->
+<!-- <div class="lightbox">
+    <div class="lightbox-content">
+    <img src="IMG/can-pepsi-caffeine-free.png" alt="" class="lightbox-image">
+</div>
+</div> -->
+
+
+
+        <div class="row">
+            <h1>New Drinking Water</h1>
+            <div class="content">
+                <div class="row1">
+                    <div class="img-roww">
+                        <img src="IMG/can-pepsi-caffeine-free.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi caffeine</p>
+                        <span class="dong">$10.0</span>
+                    </div>
+                    <div class="img-roww">
+                        <img src="IMG/can-pepsi-cherry-v2.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi cherry</p>
+                        <span class="dong">$9</span>
+                    </div>
+                    <div class="img-roww">
+                        <img src="IMG/can-pepsi-mango.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi Mango</p>
+                        <span class="dong">$10.5</span>
+                    </div>
+                    <div class="img-roww">
+                        <img src="IMG/Diet-Pepsi-Cherry-v3_12oz.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi Cherry2</p>
+                        <span class="dong">$10.2</span>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="img-roww">
+                        <img src="IMG/can-pepsi-zero-sugar-mango.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi Zero</p>
+                        <span class="dong">$10.0</span>
+                    </div>
+                    <div class="img-roww">
+                        <img src="IMG/can-real-sugar-reg.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi Sugar</p>
+                        <span class="dong">$11.3</span>
+                    </div>
+                    <div class="img-roww">
+                        <img src="IMG/Diet-Pepsi-CaffFree-v2_12oz.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi CaffFree</p>
+                        <span class="dong">$8</span>
+                    </div>
+                    <div class="img-roww">
+                        <img src="IMG/pepsi002.png" alt="" class="row-ig1">
+                        <p class="pep">Pepsi Oran</p>
+                        <span class="dong">$13.5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+    <div class="footer">
+		<button class="bt">SUBSCRIBE TO NEWSLETTER</button>
+		<div class="ft-left">
+			<img src="/IMG/logo.png" alt="">
+			<h3>pepsi</h3>
+		</div>
+		<div class="ft-lef2">
+			<a href="">Home</a>
+			<span>|</span>
+			<a href="">Product</a>
+			<span>|</span>
+			<a href="">Agency</a>
+			<span>|</span>
+			<a href="">Contact</a>
+		</div>
+		<div class="content-bottom">
+			<div class="con">
+				<h3>CONTACT US</h3>
+				<h3>TERMS & CONDITIONS</h3>
+				<h3>PRIVACY POLICY</h3>
+			</div>
+			<div class="con">
+				<h3>COPYRIGHT</h3>
+				<h3>PRODUCT FACTS</h3>
+				<h3>STORE LOCATOR</h3>
+			</div>
+			<div class="con">
+				<h3>SERVE PEPSI</h3>
+				<h3>ABOUT OUR ADS</h3>
+				<h3>CAREERS</h3>
+			</div>
+		</div>
+		
+		<div class="ft-right">
+		
+			<ul class="ssi">
+				<li><a href="#"><img src="/IMG/facebook.png"></a></li>
+				<li><a href="#"><img src="/IMG/twitter.png"></a></li>
+				<li><a href="#"><img src="/IMG/instagram.png"></a></li>
+			</ul>
+
+			<p>Website pepsico&copy;2022nbyen</p>
+
+		</div>
+
+
+
+	</div>
+    <script src="js/stardal.js"></script>
+    <script type="text/javascript">
+		function imgSlider(anything) {
+			document.querySelector('.pepsi').src = anything;
+		}
+		function changeBgColor(color) {
+			const sec = document.querySelector('.sec');
+			sec.style.background = color;
+		}
+		function menuToggle() {
+			const toggleMenu = document.querySelector('.toggleMenu');
+			const navigation = document.querySelector('.navigation');
+			toggleMenu.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+    <script>
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function () { myFunction() };
+
+		// Get the header
+		var header = document.getElementById("myHeader");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+</body>
+</html>
